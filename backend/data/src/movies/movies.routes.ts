@@ -5,7 +5,7 @@ export function createMovieRouter(db: Db) {
 const r = Router();
 
 // GET /api/movies
-r.get("/", (_req, res) => {
+r.get("/", (_req, res) => { 
 db.all(
 "SELECT DISTINCT movie FROM characters ORDER BY movie ASC",
 [],
